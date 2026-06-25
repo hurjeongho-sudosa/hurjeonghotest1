@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>SEOUL, KOREA | 남산타워가 비추는 전통과 미래의 도시</title>
+    <meta name="description" content="대한민국의 상징 남산타워(N서울타워)를 중심으로 아름답게 비쳐나는 도시 서울. 조선의 궁궐 역사부터 미래 디자인 랜드마크, 낭만적인 자물쇠 정원 및 실시간 공기질 조명 체험을 한눈에 살펴보세요.">
+    <meta name="keywords" content="서울, 남산타워, N서울타워, 서울 여행, 서울 관광, 남산 자물쇠, 경복궁, DDP, 서울 대기질 조명, 한옥마을, 한강공원">
+    <meta name="author" content="Antigravity AI">
+    
+    <!-- Open Graph (Facebook / Kakao / Link / Slack Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SEOUL, KOREA | 남산타워가 비추는 전통과 미래의 도시">
+    <meta property="og:description" content="남산 목멱산 봉수대부터 시작된 서울의 신비로운 랜드마크. 사랑의 자물쇠 체험 및 실시간 조명 시뮬레이션으로 만나는 서울 홍보관.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://visitseoul.go.kr">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+    <header id="site-header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <a href="#" class="logo" id="nav-logo">
+                    <span>S</span>EOUL
+                </a>
+                
+                <ul class="nav-links" id="nav-links-list">
+                    <li><a href="#about">도시 소개</a></li>
+                    <li><a href="#landmarks">명소 소개</a></li>
+                    <li><a href="#namsan-stories">남산 이야기</a></li>
+                    <li><a href="#namsan-simulator">공기질 라이팅</a></li>
+                    <li><a href="#guide">투어 가이드</a></li>
+                    <li><a href="#quiz">여행 테스트</a></li>
+                </ul>
+                
+                <button class="nav-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       HERO SECTION (Namsan Centric)
+       ========================================================================== -->
+    <section class="hero" id="hero-section">
+        <div class="hero-bg" id="hero-bg-parallax"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">Seoul's Shining Beacon</span>
+            <h1 class="hero-title">
+                <span class="outline-text">NAMSAN</span><br>
+                <span class="text-gradient-primary">TOWER</span>
+            </h1>
+            <p class="hero-desc">
+                서울 밤하늘의 심장이자 상징인 <span>N서울타워</span>의 은은한 조명 아래 공존하는 특별한 힐링 투어를 시작합니다.
+            </p>
+            <div class="hero-btn-container">
+                <a href="#namsan-simulator" class="btn btn-primary" id="btn-start-explore">타워 조명 켜보기 💡</a>
+                <a href="#about" class="btn btn-secondary" id="btn-learn-more">서울 자세히 알아보기</a>
+            </div>
+        </div>
+        
+        <a href="#about" class="scroll-indicator" id="scroll-arrow" aria-label="Scroll Down">
+            <span></span>
+            SCROLL DOWN
+        </a>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+    <main>
+        <section class="about id-target" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal" id="about-intro-text">
+                        <h2 class="text-gradient-secondary">남산에서 뻗어나온<br>전통과 첨단 문명의 향기</h2>
+                        <p>
+                            예로부터 목멱산이라 불렸던 남산은 수도 한양을 수호하던 도성 역사의 중심이었습니다. 
+                            오늘날 남산 정상에 굳건히 우뚝 선 N서울타워는 전 세계에 한국의 찬란한 전파와 기술력을 알리는 중심 탑이자, 매년 수천만 명의 국내외 관광객들이 한자리에 모여 일상의 행복과 사랑을 속삭이는 따사로운 연인들의 성지입니다.
+                        </p>
+                        
+                        <!-- Mini Counter / Stats -->
+                        <div class="about-stats">
+                            <div class="stat-item glass-panel" id="stat-tower-height">
+                                <div class="stat-number">480m</div>
+                                <div class="stat-label">해발 총 높이</div>
+                            </div>
+                            <div class="stat-item glass-panel" id="stat-history-year">
+                                <div class="stat-number">1975</div>
+                                <div class="stat-label">타워 준공 연도</div>
+                            </div>
+                            <div class="stat-item glass-panel" id="stat-lovers">
+                                <div class="stat-number">10M+</div>
+                                <div class="stat-label">사랑의 자물쇠 개수</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual scroll-reveal" id="about-intro-visual" style="transition-delay: 0.1s;">
+                        <div class="glass-card-stack">
+                            <div class="card-layer card-layer-1" aria-hidden="true" style="background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&auto=format&fit=crop');"></div>
+                            <div class="card-layer card-layer-2" aria-hidden="true" style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=600&auto=format&fit=crop');"></div>
+                            <div class="card-layer-info glass-panel" id="card-dynamic-info">
+                                <h4>남산이 품은 힐링</h4>
+                                <p>바쁜 강남과 동대문의 업무 지구에서 샛길로 빠져 남산 케이블카를 타면, 단 15분 만에 푸르른 자연 숲길과 바람을 품을 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           LANDMARKS SHOWCASE (Namsan at Front)
+           ========================================================================== -->
+        <section class="landmarks id-target" id="landmarks">
+            <div class="container">
+                <h2 class="section-title text-gradient-primary scroll-reveal" id="landmarks-title">MUST-VISIT LANDMARKS</h2>
+                <p class="section-subtitle scroll-reveal" id="landmarks-subtitle">서울을 대변하는 3대 랜드마크의 눈부신 서사</p>
+                
+                <div class="landmark-grid">
+                    <!-- 1. N Seoul Tower (Front & Centered) -->
+                    <div class="landmark-card scroll-reveal" id="landmark-card-tower" style="transition-delay: 0.05s;">
+                        <img class="landmark-img" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=800&auto=format&fit=crop" alt="남산 산등성이에 우뚝 솟은 N서울타워 야경">
+                        <div class="landmark-overlay">
+                            <span class="landmark-tag">The Icon of Seoul</span>
+                            <h3>🗼 N서울타워</h3>
+                            <p class="landmark-desc">
+                                해발 480m 높이에서 찬란히 서울 도심을 내려다보며 사방 360도 탁 트인 가시거리를 선물합니다. 사랑을 약속하는 열쇠 정원과 밤하늘에 연출되는 수려한 은하수 불빛 아트쇼로 영원을 맹세하기 가장 완벽한 로컬 명소입니다.
+                            </p>
+                            <span class="landmark-more">
+                                더 알아보기
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- 2. Palace -->
+                    <div class="landmark-card scroll-reveal" id="landmark-card-palace" style="transition-delay: 0.15s;">
+                        <img class="landmark-img" src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800&auto=format&fit=crop" alt="경복궁의 웅장한 가을 야경">
+                        <div class="landmark-overlay">
+                            <span class="landmark-tag">Traditional heritage</span>
+                            <h3>🏯 경복궁</h3>
+                            <p class="landmark-desc">
+                                1395년 창건되어 오랜 풍파 속에서도 군주의 품격을 잃지 않은 조선 최고의 법궁입니다. 궁궐을 감싸 도는 연못 위의 경회루 정자에서 한복을 차려입고 왕과 비의 발자취를 뒤쫓는 시간 예술을 경험할 수 있습니다.
+                            </p>
+                            <span class="landmark-more">
+                                더 알아보기
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. DDP -->
+                    <div class="landmark-card scroll-reveal" id="landmark-card-ddp" style="transition-delay: 0.25s;">
+                        <img class="landmark-img" src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=800&auto=format&fit=crop" alt="외계 우주선 형태의 환상적인 DDP 야외 광장">
+                        <div class="landmark-overlay">
+                            <span class="landmark-tag">Futuristic Design</span>
+                            <h3>🛸 동대문 디자인 플라자</h3>
+                            <p class="landmark-desc">
+                                거장 자하 하디드가 그려낸 물결치듯 일렁이는 세계 최고 규모의 알루미늄 비정형 빌딩입니다. 도심의 차갑고 평평한 아스팔트 사이에 외계 행성의 정거장처럼 부드러운 유기적 곡선과 첨단 미디어의 향연을 표출합니다.
+                            </p>
+                            <span class="landmark-more">
+                                더 알아보기
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           NAMSAN STORIES GRID SECTION (New)
+           ========================================================================== -->
+        <section class="namsan-stories id-target" id="namsan-stories">
+            <div class="container">
+                <h2 class="section-title text-gradient-secondary scroll-reveal" id="namsan-stories-title">THE HIDDEN STORIES OF NAMSAN</h2>
+                <p class="section-subtitle scroll-reveal" id="namsan-stories-subtitle">남산 자락과 철탑 속에 녹아든 달콤하고 유서 깊은 세 가지 로맨스</p>
+                
+                <div class="namsan-grid">
+                    <!-- locks card -->
+                    <div class="namsan-story-card locks-card scroll-reveal" id="story-locks" style="transition-delay: 0.05s;">
+                        <span class="story-icon">💖</span>
+                        <h4>사랑의 자물쇠 정원</h4>
+                        <p>
+                            N서울타워 야외 데크를 빽빽이 수놓은 천만 개의 자물쇠 정원은 전 세계 연인들이 사랑의 열쇠를 걸어 잠그고 열쇠를 계곡 아래로 힘차게 던져 영원불멸의 인연을 서약하는 낭만의 심볼입니다. <br>
+                            <strong style="color: var(--primary); display:block; margin-top: 1rem;">👉 이곳을 마우스로 클릭해 사랑의 하트를 더해보세요!</strong>
+                        </p>
+                    </div>
+
+                    <!-- beacon card -->
+                    <div class="namsan-story-card scroll-reveal" id="story-beacon" style="transition-delay: 0.15s;">
+                        <span class="story-icon">🔥</span>
+                        <h4>목멱산 한양 봉수대</h4>
+                        <p>
+                            조선 시대 전국 팔도에서 밀려오는 국경의 위급한 소식을 긴박한 연기와 횃불로 한양 조정에 보고하던 최후의 통신 타워였습니다. 오늘날 남산타워의 무선 송신 전파 기능은 바로 이 옛 봉수대의 역사적 얼을 이어받은 것입니다.
+                        </p>
+                    </div>
+
+                    <!-- cable car card -->
+                    <div class="namsan-story-card scroll-reveal" id="story-cable" style="transition-delay: 0.25s;">
+                        <span class="story-icon">🚠</span>
+                        <h4>남산 케이블카의 하늘길</h4>
+                        <p>
+                            1962년부터 운행되어 서울 시민들과 관광객의 큰 사랑을 받아온 전설적인 운송 수단입니다. 도심 빌딩숲 바로 머리 위를 가로지르며, 해질녘 붉게 지는 서쪽 노을빛 장관과 붉은 벽돌 한옥 밀집 풍경을 아늑하게 내려다볼 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           NAMSAN AIR QUALITY CONTROLLER WIDGET (New)
+           ========================================================================== -->
+        <section class="namsan-simulator id-target" id="namsan-simulator">
+            <div class="container">
+                <h2 class="section-title text-gradient-primary scroll-reveal" id="sim-title">NAMSAN LIGHT SIMULATOR</h2>
+                <p class="section-subtitle scroll-reveal" id="sim-subtitle">오늘의 서울 공기질에 맞춰 실시간으로 바뀌는 가상 남산타워의 찬란한 오라(Aura)</p>
+                
+                <div class="simulator-panel glass-panel scroll-reveal" id="sim-panel-box">
+                    <!-- Left Graphic (Minimalist Tower SVG with glows) -->
+                    <div class="simulator-graphic" id="sim-virtual-display">
+                        <div class="tower-aura-glow" id="tower-aura-glow-element"></div>
+                        <div class="tower-svg-container">
+                            <svg class="tower-svg" viewBox="0 0 120 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Mountain Hill -->
+                                <path d="M10 390 C 40 375, 80 375, 110 390 L110 400 L10 400 Z" fill="#141c30" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+                                <!-- Traditional Pavilion small silhouette -->
+                                <rect x="25" y="365" width="12" height="10" fill="#1b253b" rx="2"/>
+                                <path d="M22 365 L30 358 L38 365 Z" fill="#2d3748"/>
+                                
+                                <!-- Main Tower Truss Body -->
+                                <line x1="53" y1="380" x2="55" y2="180" stroke="#4a5568" stroke-width="3" />
+                                <line x1="67" y1="380" x2="65" y2="180" stroke="#4a5568" stroke-width="3" />
+                                <line x1="53" y1="380" x2="67" y2="380" stroke="#4a5568" stroke-width="2" />
+                                <line x1="54" y1="330" x2="66" y2="330" stroke="#4a5568" stroke-width="1.5" />
+                                <line x1="54" y1="280" x2="66" y2="280" stroke="#4a5568" stroke-width="1.5" />
+                                <line x1="55" y1="230" x2="65" y2="230" stroke="#4a5568" stroke-width="1.5" />
+                                <!-- Diagonal braces -->
+                                <line x1="53" y1="380" x2="66" y2="330" stroke="#2d3748" stroke-width="1" />
+                                <line x1="67" y1="380" x2="54" y2="330" stroke="#2d3748" stroke-width="1" />
+                                <line x1="54" y1="330" x2="65" y2="280" stroke="#2d3748" stroke-width="1" />
+                                <line x1="66" y1="330" x2="54" y2="280" stroke="#2d3748" stroke-width="1" />
+                                <line x1="54" y1="280" x2="65" y2="230" stroke="#2d3748" stroke-width="1" />
+                                <line x1="66" y1="280" x2="55" y2="230" stroke="#2d3748" stroke-width="1" />
+                                <line x1="55" y1="230" x2="65" y2="180" stroke="#2d3748" stroke-width="1" />
+                                <line x1="65" y1="230" x2="55" y2="180" stroke="#2d3748" stroke-width="1" />
+
+                                <!-- Main Observatory Deck (Donut Ring) -->
+                                <ellipse cx="60" cy="180" rx="22" ry="12" fill="#1e293b" stroke="#4a5568" stroke-width="2"/>
+                                <ellipse class="tower-accent-fill" cx="60" cy="180" rx="19" ry="6" />
+                                <ellipse cx="60" cy="172" rx="16" ry="10" fill="#0f172a" stroke="#4a5568" stroke-width="1.5"/>
+                                <!-- Windows inside deck -->
+                                <line class="tower-glow-line" x1="48" y1="180" x2="52" y2="180" />
+                                <line class="tower-glow-line" x1="56" y1="181" x2="64" y2="181" />
+                                <line class="tower-glow-line" x1="68" y1="180" x2="72" y2="180" />
+
+                                <!-- Upper Antenna Spire -->
+                                <line x1="60" y1="162" x2="60" y2="40" stroke="#718096" stroke-width="3"/>
+                                <!-- Dynamic Glowing Spire Segments -->
+                                <line class="tower-glow-line" x1="60" y1="150" x2="60" y2="135" />
+                                <line class="tower-glow-line" x1="60" y1="120" x2="60" y2="105" />
+                                <line class="tower-glow-line" x1="60" y1="90" x2="60" y2="75" />
+                                <line class="tower-glow-line" x1="60" y1="60" x2="60" y2="45" />
+
+                                <!-- Very Top Flashing Beacon Light -->
+                                <circle class="tower-accent-fill" cx="60" cy="40" r="3.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Controls Panel -->
+                    <div class="simulator-controls">
+                        <h3>오늘의 대기 지수를<br>선택해보세요</h3>
+                        <p>서울 광역시 대기오염 전광판에 연동되는 실제 남산타워의 4단계 실시간 컬러 조명 시스템을 수동으로 조절하고 전체 페이지의 테마 색상 톤을 동조시킬 수 있습니다.</p>
+                        
+                        <div class="control-btn-group" id="sim-controllers-grid">
+                            <button class="control-btn btn-blue active" data-state="blue" id="btn-state-blue">
+                                🔵 좋음 (맑음)
+                            </button>
+                            <button class="control-btn btn-green" data-state="green" id="btn-state-green">
+                                🟢 보통 (상쾌)
+                            </button>
+                            <button class="control-btn btn-yellow" data-state="yellow" id="btn-state-yellow">
+                                🟡 나쁨 (흐림)
+                            </button>
+                            <button class="control-btn btn-red" data-state="red" id="btn-state-red">
+                                🔴 매우나쁨 (경고)
+                            </button>
+                        </div>
+                        
+                        <!-- Description Board -->
+                        <div class="sim-info-board" id="sim-output-board">
+                            <div class="sim-info-title" id="sim-out-title">🔵 대기 상태: 좋음 (PM-10: 0~15 ㎍/m³)</div>
+                            <p class="sim-info-desc" id="sim-out-desc">서울의 미세먼지가 없는 무색무취의 완벽한 청정 상태입니다. 남산타워가 선명하고 아름다운 푸른색 조명으로 찬란하게 빛납니다. 전망대에 올라서면 인천 앞바다는 물론 개성의 송악산까지 맑게 내려다보이는 기적 같은 가시거리가 펼쳐집니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           INTERACTIVE TOUR GUIDE (Tabs Layout)
+           ========================================================================== -->
+        <section class="guide id-target" id="guide">
+            <div class="container">
+                <h2 class="section-title text-gradient-secondary scroll-reveal" id="guide-title">SEOUL INSIDER GUIDE</h2>
+                <p class="section-subtitle scroll-reveal" id="guide-subtitle">나에게 꼭 맞는 맞춤형 서울 테마를 선택해 보세요</p>
+                
+                <!-- Tab Buttons -->
+                <div class="guide-tabs scroll-reveal" id="guide-tabs-container">
+                    <button class="tab-btn active" data-tab="heritage" id="btn-tab-heritage">
+                        <span>🏯</span> 역사·문화 코스
+                    </button>
+                    <button class="tab-btn" data-tab="modern" id="btn-tab-modern">
+                        <span>⚡</span> 현대·쇼핑 코스
+                    </button>
+                    <button class="tab-btn" data-tab="kfood" id="btn-tab-kfood">
+                        <span>🥢</span> 로컬·미식 코스
+                    </button>
+                </div>
+                
+                <!-- Tab Content: Heritage -->
+                <div class="tab-content active" id="tab-heritage">
+                    <div class="guide-visual" id="visual-heritage">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800&auto=format&fit=crop" alt="경복궁의 한옥 추녀선">
+                        <div class="guide-visual-badge">Historical Charm</div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>시간을 거슬러 올라가는 고궁 탐방</h3>
+                        <p>
+                            웅장한 조선 궁궐을 따라 은은한 가야금 선율과 숲길을 걸으며 사색에 잠겨보세요. 한복을 대여하여 고풍스러운 돌담길 배경으로 특별한 인스타그램 인생샷을 남길 수 있으며 고궁 입장료가 면제되는 보너스 혜택도 누릴 수 있습니다.
+                        </p>
+                        <div class="recommendation-list">
+                            <div class="rec-item">
+                                <div class="rec-icon">🏮</div>
+                                <div class="rec-details">
+                                    <h4>경복궁 흥례문 수문장 교대의식</h4>
+                                    <p>매일 오전 10시, 오후 2시 조선 군사들의 멋진 복식 교대식을 재현합니다.</p>
+                                </div>
+                            </div>
+                            <div class="rec-item">
+                                <div class="rec-icon">🏡</div>
+                                <div class="rec-details">
+                                    <h4>북촌 한옥마을 투어</h4>
+                                    <p>도심 한가운데 기와지붕이 파도치듯 끝없이 머무르는 아름다운 한옥 밀집지입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab Content: Modern -->
+                <div class="tab-content" id="tab-modern">
+                    <div class="guide-visual" id="visual-modern">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=800&auto=format&fit=crop" alt="강남의 초고층 현대식 빌딩들">
+                        <div class="guide-visual-badge">High Tech & Fashion</div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>세상의 트렌드가 시작되는 강남 & 홍대</h3>
+                        <p>
+                            눈부시게 변화하는 패션 피플들의 메카 성수동 편집숍과 스마트 AI를 결합한 도심형 가상 쇼핑 스트리트를 질주하세요. 화려하게 밤하늘을 수놓는 빌딩숲 루프탑 바에서 힙한 일렉트로닉 비트에 맞춰 서울 최고의 시티뷰와 칵테일을 음미할 수 있습니다.
+                        </p>
+                        <div class="recommendation-list">
+                            <div class="rec-item">
+                                <div class="rec-icon">🔥</div>
+                                <div class="rec-details">
+                                    <h4>성수동 카페 & 아틀리에</h4>
+                                    <p>오래된 붉은 벽돌 공장을 예술 공간과 플래그십 스토어로 바꾼 힙플레이스 일 순위.</p>
+                                </div>
+                            </div>
+                            <div class="rec-item">
+                                <div class="rec-icon">💎</div>
+                                <div class="rec-details">
+                                    <h4>강남구 테헤란로 & 코엑스몰</h4>
+                                    <p>별마당 도서관의 거대한 책장 아래에서 미래적 라이프스타일 랜드마크를 촬영하세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab Content: K-Food -->
+                <div class="tab-content" id="tab-kfood">
+                    <div class="guide-visual" id="visual-kfood">
+                        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=800&auto=format&fit=crop" alt="김이 모락모락 나는 따뜻한 떡볶이와 한국 요리">
+                        <div class="guide-visual-badge">The K-Flavor</div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>소울을 울리는 K-미식의 모든 것</h3>
+                        <p>
+                            시끌벅적 활기찬 야시장 길거리 포장마차부터 고풍스러운 미쉐린 한정식 다이닝까지, 한식의 오색 찬란한 비주얼과 매콤달콤한 마법에 빠질 시간입니다. 선선한 강바람을 등지고 즐기는 '치맥(치킨+맥주)과 즉석 한강라면'은 서울 사람들의 진정한 힐링 시그니처입니다.
+                        </p>
+                        <div class="recommendation-list">
+                            <div class="rec-item">
+                                <div class="rec-icon">🍘</div>
+                                <div class="rec-details">
+                                    <h4>광장시장 길거리 투어</h4>
+                                    <p>바삭하게 부친 녹두빈대떡, 육회탕탕이, 중독성 넘치는 꼬마김밥으로 미식 세계를 맛보세요.</p>
+                                </div>
+                            </div>
+                            <div class="rec-item">
+                                <div class="rec-icon">🍻</div>
+                                <div class="rec-details">
+                                    <h4>여의도 한강공원 밤도깨비 야시장</h4>
+                                    <p>강변 푸드트럭의 독창적인 메뉴들을 잔디밭 돗자리에 앉아 환상적인 분수 쇼와 즐깁니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           CULTURE GRID SECTION
+           ========================================================================== -->
+        <section class="culture id-target" id="culture">
+            <div class="container">
+                <h2 class="section-title text-gradient-primary scroll-reveal" id="culture-title">SEOUL VIBE & STYLE</h2>
+                <p class="section-subtitle scroll-reveal" id="culture-subtitle">서울인들의 역동적인 하루와 깊은 일상을 담은 문화 조각들</p>
+                
+                <div class="culture-grid">
+                    <div class="culture-card scroll-reveal" id="culture-card-food" style="transition-delay: 0.05s;">
+                        <img class="culture-card-img" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=600&auto=format&fit=crop" alt="맛깔나는 한국의 불고기와 반찬">
+                        <div class="culture-card-overlay">
+                            <div class="culture-card-icon">🔥</div>
+                            <h4>K-미식과 풍요</h4>
+                            <p>입안 가득 번지는 갈비의 향과 매운 떡볶이의 활력 넘치는 소울푸드</p>
+                        </div>
+                    </div>
+                    
+                    <div class="culture-card scroll-reveal" id="culture-card-river" style="transition-delay: 0.15s;">
+                        <img class="culture-card-img" src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=600&auto=format&fit=crop" alt="한강 주변에 옹기종기 모여 한강 라면을 끓이는 한강 돗자리 텐트 풍경">
+                        <div class="culture-card-overlay">
+                            <div class="culture-card-icon">⛺</div>
+                            <h4>한강의 여유</h4>
+                            <p>도심 한가운데 수평선을 품고 버스킹과 돗자리 낭만을 즐기는 소풍</p>
+                        </div>
+                    </div>
+                    
+                    <div class="culture-card scroll-reveal" id="culture-card-kpop" style="transition-delay: 0.25s;">
+                        <img class="culture-card-img" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&auto=format&fit=crop" alt="무대 위 화려하게 쏟아지는 조명과 응원봉 야경">
+                        <div class="culture-card-overlay">
+                            <div class="culture-card-icon">🎵</div>
+                            <h4>K-Pop & 하이프</h4>
+                            <p>세계인의 마음을 울리는 빠른 비트와 매력적인 스트리트 버스킹 댄스</p>
+                        </div>
+                    </div>
+                    
+                    <div class="culture-card scroll-reveal" id="culture-card-night" style="transition-delay: 0.35s;">
+                        <img class="culture-card-img" src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?q=80&w=600&auto=format&fit=crop" alt="화려하게 불을 밝힌 서울 도심 상가 골목길 전경">
+                        <div class="culture-card-overlay">
+                            <div class="culture-card-icon">✨</div>
+                            <h4>잠들지 않는 도시</h4>
+                            <p>24시간 불이 꺼지지 않는 쇼핑타운과 다채로운 야경 불빛의 역동성</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+           INTERACTIVE TRAVEL STYLE QUIZ
+           ========================================================================== -->
+        <section class="quiz-section id-target" id="quiz">
+            <div class="container">
+                <h2 class="section-title text-gradient-secondary scroll-reveal" id="quiz-title">TRAVEL STYLE TEST</h2>
+                <p class="section-subtitle scroll-reveal" id="quiz-subtitle">나에게 딱 맞는 서울 맞춤 여행 코스를 찾아드립니다</p>
+                
+                <div class="quiz-container glass-panel scroll-reveal" id="quiz-box-panel">
+                    <div class="quiz-progress-bar" id="quiz-progress-element"></div>
+                    
+                    <div class="quiz-header" id="quiz-intro-header">
+                        <h3>나의 서울 여행 성향은?</h3>
+                        <p>단 3가지의 간단한 질문으로 당신을 매혹할 최고의 서울 1일 일정을 제안해 드립니다.</p>
+                    </div>
+                    
+                    <!-- Question Slide Container -->
+                    <div class="quiz-slides" id="quiz-questions-slider">
+                        
+                        <!-- Question 1 -->
+                        <div class="quiz-slide active" id="q1-slide">
+                            <div class="quiz-question">Q1. 주말 아침, 가장 눈길을 사로잡는 나들이 스타일은?</div>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-category="T" id="opt-q1-a">
+                                    🏯 수백 년간 보존되어 고요함이 스며드는 기와 골목 걷기
+                                </button>
+                                <button class="quiz-option-btn" data-category="M" id="opt-q1-b">
+                                    ⚡ 힙한 브랜드들의 화려한 테마 팝업스토어와 명품 숍 투어
+                                </button>
+                                <button class="quiz-option-btn" data-category="C" id="opt-q1-c">
+                                    🥢 지글지글 갓 만들어 군침 도는 야시장 길거리 푸드 정복하기
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 2 -->
+                        <div class="quiz-slide" id="q2-slide">
+                            <div class="quiz-question">Q2. 여행지에서 사진을 찍어 SNS에 남기고 싶은 최고의 배경은?</div>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-category="T" id="opt-q2-a">
+                                    🏯 가을 숲 연못 위에 정자가 아름답게 비치는 고궁 야경
+                                </button>
+                                <button class="quiz-option-btn" data-category="M" id="opt-q2-b">
+                                    ⚡ 거장들이 세운 입체적이고 은빛 곡선의 거대 현대 건축물
+                                </button>
+                                <button class="quiz-option-btn" data-category="C" id="opt-q2-c">
+                                    🥢 붉은빛 노을을 배경으로 시원한 강물이 출렁이는 푸른 공원
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Question 3 -->
+                        <div class="quiz-slide" id="q3-slide">
+                            <div class="quiz-question">Q3. 고된 하루 끝에 여행의 로맨틱함을 한층 끌어올릴 최적의 휴식은?</div>
+                            <div class="quiz-options">
+                                <button class="quiz-option-btn" data-category="T" id="opt-q3-a">
+                                    🏯 정겨운 온돌방에 앉아 차를 따르는 전통 찻집 다도 체험
+                                </button>
+                                <button class="quiz-option-btn" data-category="M" id="opt-q3-b">
+                                    ⚡ 밤하늘 별처럼 반짝이는 마천루 야경을 품은 루프탑 라운지 바
+                                </button>
+                                <button class="quiz-option-btn" data-category="C" id="opt-q3-c">
+                                    🥢 강바람 솔솔 부는 한강 둔치에서 즐기는 한강 라면과 피크닉
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Result Card (Populated Dynamically via JS) -->
+                    <div class="quiz-result" id="quiz-result">
+                        <span class="result-badge" id="quiz-res-badge">역사와 전통의 탐험가</span>
+                        <h3 class="result-title text-gradient-primary" id="quiz-res-title">과거와 호흡하는 시간 여행</h3>
+                        <p class="result-desc" id="quiz-res-desc">
+                            조선 왕조의 위엄 어린 궁궐과 고즈넉한 북촌 한옥마을을 걸으며 깊은 역사와 전통의 향기를 느끼는 서울 여행 스타일입니다.
+                        </p>
+                        
+                        <!-- Timeline Itinerary -->
+                        <div class="result-itinerary" id="quiz-itinerary-box">
+                            <h4 id="quiz-itinerary-header">🗓 추천 맞춤형 1일 루트</h4>
+                            <div class="itinerary-timeline" id="quiz-itinerary-timeline">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary" onclick="resetQuiz()" id="btn-quiz-retry">
+                            테스트 다시 하기 🔄
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+    <footer id="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand" id="footer-logo-brand">
+                    <h4><span>S</span>EOUL</h4>
+                    <p>
+                        서울 특별시 홍보 가이드 페이지입니다. <br>
+                        빛나고 찬란한 서울의 이야기를 모두에게 전달하며 한 발짝 더 가깝게 K-컬처를 교감할 수 있습니다.
+                    </p>
+                    <div class="social-links" id="footer-social-media">
+                        <a href="https://instagram.com" class="social-btn" aria-label="Visit Seoul Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.79.073 7.151.014 8.431 0 8.839 0 12s.014 3.569.072 4.849c.2 4.36 2.618 6.778 6.978 6.978 1.28.058 1.689.072 4.949.072s3.569-.014 4.849-.072c4.36-.2 6.778-2.618 6.978-6.979.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.569-.072-4.849-.198-4.36-2.615-6.778-6.979-6.978C15.669.014 15.26 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://youtube.com" class="social-btn" aria-label="Visit Seoul YouTube" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                        <a href="https://facebook.com" class="social-btn" aria-label="Visit Seoul Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links" id="footer-menu-links">
+                    <h5>바로가기</h5>
+                    <ul>
+                        <li><a href="#about">도시 소개</a></li>
+                        <li><a href="#landmarks">관광 랜드마크</a></li>
+                        <li><a href="#namsan-stories">남산 스토리</a></li>
+                        <li><a href="#namsan-simulator">공기질 라이팅</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links" id="footer-gov-links">
+                    <h5>공식 정보</h5>
+                    <ul>
+                        <li><a href="https://visitseoul.go.kr" target="_blank" rel="noopener noreferrer">서울시 공식관광정보</a></li>
+                        <li><a href="https://seoul.go.kr" target="_blank" rel="noopener noreferrer">서울특별시청</a></li>
+                        <li><a href="https://gwanghwamun.seoul.go.kr" target="_blank" rel="noopener noreferrer">광화문 광장 안내</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter" id="footer-newsletter-signup">
+                    <h5>뉴스레터 신청</h5>
+                    <p>매월 발행되는 서울 소식과 이벤트 할인 혜택을 메일로 만나보세요.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('신청해 주셔서 감사합니다! 서울의 다채로운 소식이 조만간 찾아갑니다.'); this.reset();" aria-label="Newsletter Form">
+                        <input type="email" class="newsletter-input" placeholder="이메일 주소를 입력해 주세요" required id="newsletter-email-field" aria-label="Email Address">
+                        <button type="submit" class="btn-icon" aria-label="Subscribe to Newsletter" id="btn-submit-newsletter">
+                            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 서울시 특별 홍보 프로젝트. All Rights Reserved.</p>
+                <a href="#" class="footer-logo"><span>S</span>EOUL</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="app.js"></script>
+</body>
+</html>
